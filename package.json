@@ -1,0 +1,18 @@
+{
+  "name": "oc-p3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch /sass/main.scss:public/css/style.css"  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thomas-Lefevre/ThomasLefevre_3_31082021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thomas-Lefevre/ThomasLefevre_3_31082021/issues"
+  },
+  "homepage": "https://github.com/Thomas-Lefevre/ThomasLefevre_3_31082021#readme"
+}
