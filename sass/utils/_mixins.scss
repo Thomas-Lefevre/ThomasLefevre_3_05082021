@@ -1,0 +1,10 @@
+@mixin btn {
+    background-color: $couleur-primaire;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    &:hover{
+        background-color: $couleur-primaire-claire;
+    }
+}

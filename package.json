@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch /sass/main.scss:public/css/style.css"  },
+    "sass": "sass --watch ./sass/main.scss:public/css/style.css"  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Thomas-Lefevre/ThomasLefevre_3_31082021.git"

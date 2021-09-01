@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.gras {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+.btn {
+  background-color: #9356DC;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+}
+.btn:hover {
+  background-color: #ad6aff;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  border-bottom: lightgray 2px solid;
+}
+
+.emplacement {
+  display: flex;
+  width: 40%;
+  margin: 20px auto;
+}
+.emplacement__icone {
+  margin-right: auto;
+}
+
+.reservation {
+  text-align: center;
+}
+.reservation__slogan {
+  margin: 60px auto 0px auto;
+  width: 70%;
+}
+.reservation__p {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.fonctionnement {
+  margin: 100px auto;
+  width: 90%;
+}
+.fonctionnement__nombre {
+  background-color: #9356DC;
+  height: 30px;
+  width: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.fonctionnement__nombre--couleur {
+  color: #9356DC;
+}
+.fonctionnement__etape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  margin: 50px 0;
+}
+
+/*# sourceMappingURL=style.css.map */

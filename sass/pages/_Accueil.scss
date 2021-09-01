@@ -1,0 +1,45 @@
+.emplacement{
+    display: flex;
+    width: 40%;
+    margin: 20px auto;
+    &__icone{
+        margin-right: auto;
+    }
+}
+
+.reservation{
+    text-align: center;
+    &__slogan{
+        margin: 60px auto 0px auto;
+        width: 70%;
+    }
+    &__p{
+        width: 80%;
+        margin: 30px auto;
+    }
+}
+
+.fonctionnement{
+    margin: 100px auto;
+    width: 90%;
+    &__nombre{
+        background-color: $couleur-primaire;
+        height: 30px;
+        width: 30px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        &--couleur{
+            color: $couleur-primaire;
+        }
+    }
+    &__etape{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 75%;
+        margin: 50px 0;
+    }
+}
