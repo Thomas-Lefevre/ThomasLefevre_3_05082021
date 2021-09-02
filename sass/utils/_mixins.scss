@@ -1,10 +1,19 @@
-@mixin btn {
-    background-color: $couleur-primaire;
+@mixin btn ($color:$couleur-primaire) {
+    // background-color: $couleur-primaire;
+    background: linear-gradient($couleur-secondaire, $couleur-primaire);
     border-radius: 30px;
     border: none;
     color: white;
     padding: 15px 20px;
     &:hover{
-        background-color: $couleur-primaire-claire;
+        background: linear-gradient( 
+            lighten($color: $couleur-secondaire, $amount: 10%),
+            lighten($color: $couleur-primaire, $amount: 10%)
+        );
     }
+}
+
+@mixin accueil__centrer {
+    margin: 100px auto;
+    width: 90%;
 }
