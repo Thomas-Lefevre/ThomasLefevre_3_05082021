@@ -7,6 +7,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.shrikhand {
+  font-family: "Shrikhand", sans-serif;
+}
+
 .gras {
   font-weight: bold;
   margin: 5px 0;
@@ -41,20 +45,48 @@ h2 {
   border-bottom: lightgray 2px solid;
 }
 
+.footer {
+  background-color: #4d4d4d;
+  padding: 30px;
+}
+.footer__lien {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  color: white;
+}
+.footer__titre {
+  font-size: 1.5em;
+  margin-bottom: 25px;
+}
+.footer__icone {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
 .emplacement {
+  background-color: #dbdbdb;
+  padding: 10px 0;
+}
+.emplacement__localisation {
   display: flex;
-  width: 40%;
-  margin: 20px auto;
+  margin: auto;
+  justify-content: center;
 }
 .emplacement__icone {
-  margin-right: auto;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .reservation {
   text-align: center;
+  background-color: #f2f2f2;
+  padding: 60px 0;
 }
 .reservation__slogan {
-  margin: 60px auto 0px auto;
+  margin: auto;
   width: 70%;
 }
 .reservation__p {
@@ -75,16 +107,25 @@ h2 {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  position: absolute;
+  left: 8px;
 }
 .fonctionnement__etape {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 75%;
+  width: 85%;
   margin: 50px 0;
+  padding: 30px 0px 30px 50px;
+  border-radius: 20px;
+  box-shadow: lightgray 0px 7px 40px 0px;
+  background-color: #f2f2f2;
+}
+.fonctionnement__etape--couleur {
+  background-color: #f2eafb;
 }
 .fonctionnement__icone {
   font-size: 20px;
+  margin-right: 20px;
 }
 .fonctionnement__icone--couleur {
   color: #9356DC;
@@ -98,6 +139,7 @@ h2 {
   width: 100%;
   height: max-content;
   margin: 30px 0;
+  color: black;
   box-shadow: lightgray 0px 7px 40px 0px;
   border-radius: 20px 20px 20px 20px;
   overflow: hidden;

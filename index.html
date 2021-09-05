@@ -21,8 +21,10 @@
 
     <main>
         <section class="emplacement">
-            <i class="fas fa-map-marker-alt emplacement__icone"></i>
-            <p class="gras">Paris, Belleville</p>
+            <div class="emplacement__localisation">
+                <i class="fas fa-map-marker-alt emplacement__icone"></i>
+                <p class="gras">Paris, Belleville</p>
+            </div>
         </section>
         <section class="reservation">
             <h2 class="reservation__slogan">Réservez le menu qui vous convient</h2>
@@ -45,7 +47,7 @@
                 <i class="fas fa-list-ul fonctionnement__icone"></i>
                 <p>Composez votre menu</p>
             </div>
-            <div class="fonctionnement__etape">
+            <div class="fonctionnement__etape fonctionnement__etape--couleur">
                 <div class="fonctionnement__nombre">
                     <p>3</p>
                 </div>
@@ -134,12 +136,12 @@
         </section>
     </main>
 
-    <footer>
-        <img src="public/img/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
-        <a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a>
-        <a href="#"><i class="fas fa-hands-helping"></i> Devenir partenaire</a>
-        <a href="#">Mentions légales</a>
-        <a href="#">Contact</a>
+    <footer class="footer">
+        <a href="#" class="shrikhand footer__lien footer__titre">ohmyfood</a>
+        <a href="#" class="footer__lien"><i class="fas fa-utensils footer__icone"></i> Proposer un restaurant</a>
+        <a href="#" class="footer__lien"><i class="fas fa-hands-helping footer__icone"></i> Devenir partenaire</a>
+        <a href="#" class="footer__lien">Mentions légales</a>
+        <a href="#" class="footer__lien">Contact</a>
     </footer>
 </body>
 

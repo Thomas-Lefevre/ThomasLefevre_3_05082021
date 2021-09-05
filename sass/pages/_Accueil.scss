@@ -1,16 +1,24 @@
 .emplacement{
-    display: flex;
-    width: 40%;
-    margin: 20px auto;
+    background-color: #dbdbdb;
+    padding: 10px 0;
+    &__localisation{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+    }
     &__icone{
-        margin-right: auto;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
     }
 }
 
 .reservation{
     text-align: center;
+    background-color: #f2f2f2;
+    padding: 60px 0;
     &__slogan{
-        margin: 60px auto 0px auto;
+        margin: auto;
         width: 70%;
     }
     &__p{
@@ -30,16 +38,25 @@
         justify-content: center;
         align-items: center;
         border-radius: 50%;
+        position: absolute;
+        left: 8px;
     }
     &__etape{
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        width: 75%;
+        width: 85%;
         margin: 50px 0;
+        padding: 30px 0px 30px 50px;
+        border-radius: 20px;
+        box-shadow: lightgray 0px 7px 40px 0px;
+        background-color: #f2f2f2;
+        &--couleur{
+            background-color: lighten($color: $couleur-primaire, $amount: 35%);
+        }
     }
     &__icone{
         font-size: 20px;
+        margin-right: 20px;
         &--couleur{
             color: $couleur-primaire;
         }
@@ -52,6 +69,7 @@
         width: 100%;
         height: max-content;
         margin: 30px 0;
+        color: black;
         box-shadow: lightgray 0px 7px 40px 0px;
         border-radius: 20px 20px 20px 20px;
         overflow: hidden;
