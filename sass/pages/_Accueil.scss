@@ -29,6 +29,10 @@
 
 .fonctionnement{
     @include accueil__centrer;
+    &__titre{
+        margin: auto;
+        width: max-content;
+    }
     &__nombre{
         background-color: $couleur-primaire;
         height: 30px;
@@ -39,12 +43,12 @@
         align-items: center;
         border-radius: 50%;
         position: absolute;
-        left: 8px;
+        left: -15px;
     }
     &__etape{
         display: flex;
         align-items: center;
-        width: 85%;
+        position: relative;
         margin: 50px 0;
         padding: 30px 0px 30px 50px;
         border-radius: 20px;
@@ -52,6 +56,10 @@
         background-color: #f2f2f2;
         &--couleur{
             background-color: lighten($color: $couleur-primaire, $amount: 35%);
+        }
+        @media only screen and (min-width : 1100px) {
+            width: 20%;
+            margin: 50px auto;
         }
     }
     &__icone{
@@ -65,6 +73,12 @@
 
 .restaurants{
     @include accueil__centrer;
+    &__titre{
+        @media only screen and (min-width : 1100px) {
+            width: max-content;
+            margin: auto;
+        }
+    }
     &__card{
         width: 100%;
         height: max-content;
@@ -74,6 +88,9 @@
         border-radius: 20px 20px 20px 20px;
         overflow: hidden;
         position: relative;
+        @media only screen and (min-width : 1100px) {
+            width: 48%;
+        }
     }
     &__imgDimension{
         width: 100%;
@@ -97,14 +114,29 @@
     &__infos{
         display: flex;
         justify-content: space-between;
-        padding: 20px;
+        &__lien{
+            width: 80%;
+        }
+        &__titre{
+            padding: 20px;
+        }
     }
     &__favori{
         height: 50px;
         width: 50px;
+        padding: 20px;
         font-size: 2em;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    &__desktop{
+        @media only screen and (min-width : 1100px) {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: auto;
+            width: 90%;
+        }
     }
 }
