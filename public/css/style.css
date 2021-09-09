@@ -30,14 +30,14 @@ h2 {
 }
 
 .btn {
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(to right bottom, #FF79DA, #9356DC);
   border-radius: 30px;
   border: none;
   color: white;
   padding: 15px 20px;
 }
 .btn:hover {
-  background: linear-gradient(#fface8, #ae80e5);
+  background: linear-gradient(to right bottom, #fface8, #ae80e5);
 }
 
 .header {
@@ -95,18 +95,33 @@ h2 {
   align-items: center;
 }
 
+@media only screen and (min-width: 1100px) {
+  .responsiveDesktop {
+    display: flex;
+  }
+}
+
 .reservation {
   text-align: center;
   background-color: #f2f2f2;
   padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .reservation__slogan {
-  margin: auto;
+  margin: 30px 0;
   width: 70%;
 }
 .reservation__p {
   width: 80%;
   margin: 30px auto;
+}
+@media only screen and (min-width: 1100px) {
+  .reservation {
+    width: 50%;
+  }
 }
 
 .fonctionnement {
@@ -144,7 +159,7 @@ h2 {
 }
 @media only screen and (min-width: 1100px) {
   .fonctionnement__etape {
-    width: 20%;
+    width: 50%;
     margin: 50px auto;
   }
 }
@@ -154,6 +169,11 @@ h2 {
 }
 .fonctionnement__icone--couleur {
   color: #9356DC;
+}
+@media only screen and (min-width: 1200px) {
+  .fonctionnement {
+    width: 50%;
+  }
 }
 
 .restaurants {
@@ -232,22 +252,26 @@ h2 {
 @media only screen and (min-width: 1200px) {
   .main {
     display: flex;
+    flex-direction: row-reverse;
   }
 }
 
 .dimensionImg {
   width: 100%;
-  height: 250px;
 }
-@media only screen and (min-width: 550px) and (max-width: 1999px) {
+@media only screen and (max-width: 549px) {
+  .dimensionImg {
+    height: 250px;
+  }
+}
+@media only screen and (min-width: 550px) and (max-width: 1199px) {
   .dimensionImg {
     height: 450px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .dimensionImg {
-    width: 70%;
-    height: 1300px;
+    width: 55%;
   }
 }
 
@@ -256,7 +280,7 @@ h2 {
   height: 300px;
   object-fit: cover;
 }
-@media only screen and (min-width: 550px) and (max-width: 1999px) {
+@media only screen and (min-width: 550px) and (max-width: 1199px) {
   .img {
     height: 500px;
   }
@@ -275,7 +299,7 @@ h2 {
 }
 @media only screen and (min-width: 1200px) {
   .menu {
-    width: 30%;
+    width: 45%;
     border-radius: 0;
   }
 }

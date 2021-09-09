@@ -1,12 +1,13 @@
 @mixin btn ($color:$couleur-primaire) {
     // background-color: $couleur-primaire;
-    background: linear-gradient($couleur-secondaire, $couleur-primaire);
+    background: linear-gradient(to right bottom,$couleur-secondaire, $couleur-primaire);
     border-radius: 30px;
     border: none;
     color: white;
     padding: 15px 20px;
     &:hover{
-        background: linear-gradient( 
+        background: linear-gradient(
+            to right bottom, 
             lighten($color: $couleur-secondaire, $amount: 10%),
             lighten($color: $couleur-primaire, $amount: 10%)
         );
