@@ -29,6 +29,16 @@ h2 {
   font-size: 1.5em;
 }
 
+@keyframes apparitionObjet {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .btn {
   background: linear-gradient(to right bottom, #FF79DA, #9356DC);
   border-radius: 30px;
@@ -225,7 +235,7 @@ h2 {
   justify-content: space-between;
 }
 .restaurants__infos__lien {
-  width: 80%;
+  width: 100%;
 }
 .restaurants__infos__titre {
   padding: 20px;
@@ -239,6 +249,26 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+.restaurants__favori--neutre {
+  position: absolute;
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+.restaurants__favori:hover .restaurants__favori--neutre {
+  opacity: 0;
+}
+.restaurants__favori--active {
+  opacity: 0;
+  transition-duration: 0.5s;
+  background-color: #9356DC;
+  background-size: 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right bottom, #FF79DA, #9356DC);
+}
+.restaurants__favori:hover .restaurants__favori--active {
+  opacity: 1;
+}
 @media only screen and (min-width: 1100px) {
   .restaurants__desktop {
     display: flex;
@@ -247,6 +277,42 @@ h2 {
     margin: auto;
     width: 90%;
   }
+}
+
+.delai-0 {
+  animation-delay: 0s;
+}
+
+.delai-1 {
+  animation-delay: 0.2s;
+}
+
+.delai-2 {
+  animation-delay: 0.4s;
+}
+
+.delai-3 {
+  animation-delay: 0.6s;
+}
+
+.delai-4 {
+  animation-delay: 0.8s;
+}
+
+.delai-5 {
+  animation-delay: 1s;
+}
+
+.delai-6 {
+  animation-delay: 1.2s;
+}
+
+.delai-7 {
+  animation-delay: 1.4s;
+}
+
+.delai-8 {
+  animation-delay: 1.6s;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -310,8 +376,29 @@ h2 {
   align-items: center;
   margin-bottom: 40px;
 }
-.nom__icone {
+.nom__favori {
+  display: flex;
   font-size: 1.5em;
+}
+.nom__favori--neutre {
+  position: absolute;
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+.nom__favori:hover .nom__favori--neutre {
+  opacity: 0;
+}
+.nom__favori--active {
+  opacity: 0;
+  transition-duration: 0.5s;
+  background-color: #9356DC;
+  background-size: 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right bottom, #FF79DA, #9356DC);
+}
+.nom__favori:hover .nom__favori--active {
+  opacity: 1;
 }
 
 .titreSection {
@@ -329,7 +416,10 @@ h2 {
   box-shadow: lightgray 0px 7px 40px 0px;
   margin-bottom: 20px;
   overflow: hidden;
-  animation: apparitionItem 0.6s;
+  animation-name: apparitionObjet;
+  animation-duration: 1s;
+  transform: scale(0);
+  animation-fill-mode: both;
 }
 .card__infos {
   padding: 10px;

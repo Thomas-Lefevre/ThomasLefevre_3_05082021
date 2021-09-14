@@ -1,5 +1,4 @@
 @mixin btn ($color:$couleur-primaire) {
-    // background-color: $couleur-primaire;
     background: linear-gradient(to right bottom,$couleur-secondaire, $couleur-primaire);
     border-radius: 30px;
     border: none;
