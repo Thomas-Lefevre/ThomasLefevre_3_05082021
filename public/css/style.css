@@ -196,7 +196,7 @@ h2 {
 
 .reservation {
   text-align: center;
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
   padding: 20px 0;
   display: flex;
   flex-direction: column;
@@ -249,7 +249,7 @@ h2 {
   padding: 30px 0px 30px 50px;
   border-radius: 20px;
   box-shadow: lightgray 0px 7px 40px 0px;
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
 }
 .fonctionnement__etape--couleur {
   background-color: #f2eafb;
@@ -274,7 +274,7 @@ h2 {
 
 .restaurants {
   padding: 20px;
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
 }
 @media only screen and (min-width: 1100px) {
   .restaurants__titre {
@@ -458,7 +458,7 @@ h2 {
 .menu {
   padding: 30px 30px;
   position: relative;
-  background-color: #f2f2ff;
+  background-color: #f6f6f6;
   border-radius: 50px 50px 0 0;
 }
 @media only screen and (min-width: 1200px) {
