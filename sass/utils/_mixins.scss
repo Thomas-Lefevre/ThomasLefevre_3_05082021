@@ -2,6 +2,7 @@
     background: linear-gradient(to right bottom,$couleur-secondaire, $couleur-primaire);
     border-radius: 30px;
     border: none;
+    box-shadow: gray 0px 7px 40px 0px;
     color: white;
     padding: 15px 20px;
     &:hover{
@@ -10,6 +11,7 @@
             lighten($color: $couleur-secondaire, $amount: 10%),
             lighten($color: $couleur-primaire, $amount: 10%)
         );
+        box-shadow: darken($color: gray, $amount: 10%) 0px 7px 40px 5px;
     }
 }
 
