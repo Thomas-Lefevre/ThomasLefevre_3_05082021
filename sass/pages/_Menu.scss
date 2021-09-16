@@ -1,4 +1,4 @@
-@for $i from 0 to 9 {
+@for $i from 0 to 10 {
     .delai-#{$i} {
       animation-delay:  #{$i/5}s;
     }
@@ -8,6 +8,7 @@
     @media only screen and (min-width:1200px){
         display: flex;
         flex-direction: row-reverse;
+        overflow: hidden;
     }
 }
 .dimensionImg{
@@ -54,6 +55,7 @@
     &__favori{
         display: flex;
         font-size: 1.5em;
+        border: none;
         @include favori;
     }
 }
@@ -84,11 +86,13 @@
         font-weight: bold;
         font-size: 1.1em;
         margin-bottom: 5px;
+        width: max-content;
         @include textLong
     }
     &__infosComplementaire{
         display: flex;
         justify-content: space-between;
+        font-size: 16px;
         &--reduction{
             @include textLong
         }
@@ -117,6 +121,18 @@
             width: 70%;
         }
     }
+    &:focus &__choisi{
+        margin: 0;
+    }
+    &:focus &__choisiIcone{
+        transform: rotate(1turn);
+    }
+    &:focus &__infos{
+        @media only screen and (max-width:549px) {
+            width: 70%;
+        }
+    }
+
     &__choisiIcone{
         transition-duration: 0.7s;
     }

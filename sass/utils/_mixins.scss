@@ -15,11 +15,6 @@
     }
 }
 
-@mixin accueil__centrer {
-    margin: 100px auto;
-    width: 90%;
-}
-
 @mixin textLong {
     overflow: hidden;
     white-space: nowrap;
